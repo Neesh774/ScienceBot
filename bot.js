@@ -201,6 +201,9 @@ client.on('message', message => {
     if(MIRRORMODE == true && message.author.username != 'ScienceBot' && message.author.username != 'Neesh' && message.content != '.mirrormode'){
         message.channel.send('*' + message.content + '*'); 
     }
+    if(message.content.startsWith('.imposter')){
+        message.channel.send('.      　。　　　　•　    　ﾟ　　。 \n 　　.　　　.　　　  　　.　　　　　。　　   。　. \n  　.　　      。　        ඞ   。　    .    • \n  •         ' + message.content.split('.imposter')[1] + ' was the impostor. \n                0 Impostors remain. 　 。　. \n 　 　　。　　　　　　ﾟ　　　.　　　　　. \n ,　　　　.　    . \n         。   　ﾟ　　　。　　　　•　  　ﾟ　　　.')
+    }
 });
 
 client.login('NzcyNzkyMzkwNzMyODczNzI4.X5_0_w.G0VKbumxoWjdymftGIwzfRKBOMw');
